@@ -9,3 +9,5 @@ def bellmanford(graph,n,src):
                 if(graph[i][j] != INF and dist[i] != INF and dist[i] + graph[i][j] < dist[j]):
                     dist[j] = dist[i] + graph[i][j]
     print(dist)
+
+INF = sys.maxsize
